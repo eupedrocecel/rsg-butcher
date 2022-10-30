@@ -12,9 +12,9 @@
 
 # Installation:
 - ensure that the dependancies are added and started
-- add qr-butcher to your resources folder
+- add rsg-butcher to your resources folder
 - add items to your "\qr-core\shared\items.lua"
 - add images to your "\qr-inventory\html\images"
 
 # Starting the resource:
-- add the following to your server.cfg file : ensure qr-butcher
+- add the following to your server.cfg file : ensure rsg-butcher
