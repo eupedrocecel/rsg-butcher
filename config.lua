@@ -398,18 +398,3 @@ Config.Animal = {
 	},
 	
 }
-
-Config.ButcherNpc = {
-
-	[1] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(-339.26, 767.7, 115.57),				["Heading"] = 103.16 }, -- butcher Valentine 
-	[2] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(1297.45, -1277.64, 74.88),			["Heading"] = 145.29 }, -- butcher Rhodes
-	[3] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(-5509.94, -2947.12, -2.89),			["Heading"] = 253.13 }, -- butcher Tumbleweed
-	[4] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(2934.31, 1301.27, 43.48),				["Heading"] = 73.07 }, -- butcher Anusburg
-	[5] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(2992.4, 572.32, 43.37),				["Heading"] = 269.48 }, -- butcher Van Horn
-	[6] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(-877.02, -1341.79, 42.29),			["Heading"] = 181.39 }, -- butcher Blackwater
-	[7] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(-1356.793, 2419.8583, 307.48718 -1),	["Heading"] = 306.30548 }, -- butcher Anusburg
-	[8] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(-1007.878, -541.0155, 99.094078 -1),	["Heading"] = 281.56909 }, -- butcher Riggs Station
-	[9] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(1248.7347, -7043.517, 41.8414 -1),	["Heading"] = 239.3386 }, -- butcher Guarma
-	[10] = { ["Model"] = "U_M_M_VALBUTCHER_01",	["Pos"] = vector3(-1753.043, -392.8256, 156.2442 -1),	["Heading"] = 187.58888 }, -- butcher strawberry
-	
-}

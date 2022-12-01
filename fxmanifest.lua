@@ -6,8 +6,7 @@ author 'RexShack#3041'
 description 'rsg-butcher'
 
 client_scripts {
-	'client/client.lua',
-	'client/npc.lua'
+	'client/client.lua'
 }
 
 server_scripts {
