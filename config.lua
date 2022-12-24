@@ -16,16 +16,16 @@ Config.Blip = {
 -- prompt locations
 Config.ButcherLocations = {
 
-    {name = 'St Denis Butcher',      location = 'stdenis-butcher',      coords = vector3(2816.37, -1322.24, 46.61),        showblip = true, showmarker = true}, --st denis
-    {name = 'Valentine Butcher',     location = 'valentine-butcher',    coords = vector3(-341.07, 767.35, 116.71),         showblip = true, showmarker = true}, --valentine
-    {name = 'Rhodes Butcher',        location = 'rhodes-butcher',       coords = vector3(1296.36, -1279.26, 75.84),        showblip = true, showmarker = true}, -- rhodes
-    {name = 'Annesburg Butcher',     location = 'annesburg-butcher',    coords = vector3(2932.54, 1302.00, 44.48),         showblip = true, showmarker = true}, -- annesburg
-    {name = 'Tumbleweed Butcher',    location = 'tumbleweed-butcher',   coords = vector3(-5508.10, -2947.73, -1.87),       showblip = true, showmarker = true}, -- tumbleweed
-    {name = 'Blackwater Butcher',    location = 'blackwater-butcher',   coords = vector3(-877.19, -1343.62, 43.29),        showblip = true, showmarker = true}, -- blackwater
-    {name = 'Strawberry Butcher',    location = 'strawberry-butcher',   coords = vector3(-1752.91, -394.74, 156.19),       showblip = true, showmarker = true}, -- strawberry
-    {name = 'Van Horn Butcher',      location = 'vanhorn-butcher',      coords = vector3(2994.23, 571.79, 44.35),          showblip = true, showmarker = true}, -- vanhorn
-    {name = 'Spider Gorge Butcher',  location = 'spidergorge-butcher',  coords = vector3(-1355.103, 2420.8293, 307.48272), showblip = true, showmarker = true}, -- spidergorge
-    {name = 'Riggs Station Butcher', location = 'riggsstation-butcher', coords = vector3(-1005.966, -540.9986, 98.964859), showblip = true, showmarker = true}, -- riggsstation
+    {name = 'St Denis Butcher',      location = 'stdenis-butcher',      coords = vector3(2816.37, -1322.24, 46.61 -0.8),        showblip = true, showmarker = true}, --st denis
+    {name = 'Valentine Butcher',     location = 'valentine-butcher',    coords = vector3(-341.07, 767.35, 116.71 -0.8),         showblip = true, showmarker = true}, --valentine
+    {name = 'Rhodes Butcher',        location = 'rhodes-butcher',       coords = vector3(1296.36, -1279.26, 75.84 -0.8),        showblip = true, showmarker = true}, -- rhodes
+    {name = 'Annesburg Butcher',     location = 'annesburg-butcher',    coords = vector3(2932.54, 1302.00, 44.48 -0.8),         showblip = true, showmarker = true}, -- annesburg
+    {name = 'Tumbleweed Butcher',    location = 'tumbleweed-butcher',   coords = vector3(-5508.10, -2947.73, -1.87 -0.8),       showblip = true, showmarker = true}, -- tumbleweed
+    {name = 'Blackwater Butcher',    location = 'blackwater-butcher',   coords = vector3(-877.19, -1343.62, 43.29 -0.8),        showblip = true, showmarker = true}, -- blackwater
+    {name = 'Strawberry Butcher',    location = 'strawberry-butcher',   coords = vector3(-1752.91, -394.74, 156.19 -0.8),       showblip = true, showmarker = true}, -- strawberry
+    {name = 'Van Horn Butcher',      location = 'vanhorn-butcher',      coords = vector3(2994.23, 571.79, 44.35 -0.8),          showblip = true, showmarker = true}, -- vanhorn
+    {name = 'Spider Gorge Butcher',  location = 'spidergorge-butcher',  coords = vector3(-1355.103, 2420.8293, 307.48272 -0.8), showblip = true, showmarker = true}, -- spidergorge
+    {name = 'Riggs Station Butcher', location = 'riggsstation-butcher', coords = vector3(-1005.966, -540.9986, 98.964859 -0.8), showblip = true, showmarker = true}, -- riggsstation
     
 }
 
