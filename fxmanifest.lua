@@ -17,7 +17,7 @@ shared_scripts {
     'config.lua'
 }
 
-dependency 'qr-core'
-dependency 'qr-menu'
+dependency 'rsg-core'
+dependency 'rsg-menu'
 
 lua54 'yes'
