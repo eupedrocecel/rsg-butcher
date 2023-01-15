@@ -6,7 +6,7 @@ local name
 Citizen.CreateThread(function()
     for butcher, v in pairs(Config.ButcherLocations) do
         local name = v.name
-        exports['rsg-core']:createPrompt(v.location, v.coords, RSGCore.Shared.Keybinds['J'], 'Open ' .. v.name, {
+        exports['rsg-core']:createPrompt(v.location, v.coords, RSGCore.Shared.Keybinds['J'],  Lang:t('menu.open') .. v.name, {
             type = 'client',
             event = 'rsg-butcher:client:menu',
             args = { name },
@@ -28,8 +28,8 @@ RegisterNetEvent('rsg-butcher:client:menu', function(butchername)
             isMenuHeader = true,
         },
         {
-            header = "Sell Animal",
-            txt = "sell your animal to the butcher",
+            header = Lang:t('menu.sell_animal'),
+            txt = Lang:t('menu.sell_your_animal_the_butcher'),
             icon = "fas fa-paw",
             params = {
                 event = 'rsg-butcher:client:sellanimal',
@@ -38,8 +38,8 @@ RegisterNetEvent('rsg-butcher:client:menu', function(butchername)
             }
         },
         {
-            header = "Open Shop",
-            txt = "buy items from the butcher",
+            header = Lang:t('menu.open_shop'),
+            txt = Lang:t('menu.buy_items_from_butcher'),
             icon = "fas fa-shopping-basket",
             params = {
                 event = 'rsg-butcher:client:OpenButcherShop',
@@ -48,7 +48,7 @@ RegisterNetEvent('rsg-butcher:client:menu', function(butchername)
             }
         },
         {
-            header = "Close Menu",
+            header =  Lang:t('menu.close_menu'),
             txt = '',
             params = {
                 event = 'rsg-menu:closeMenu',
@@ -66,7 +66,7 @@ AddEventHandler('rsg-butcher:client:sellanimal', function()
     if Config.Debug == true then
         print("model: "..tostring(model))
         print("quality: "..tostring(quality))
-    end
+    end    
     if holding ~= false then
         for i, row in pairs(Config.Animal) do
             if model == Config.Animal[i]["model"] then
@@ -76,7 +76,7 @@ AddEventHandler('rsg-butcher:client:sellanimal', function()
                     print("reward: "..tostring(reward))
                     print("name: "..tostring(name))
                 end
-                RSGCore.Functions.Progressbar('sell-carcass', 'Selling '..name..'..', Config.SellTime, false, true, {
+                RSGCore.Functions.Progressbar('sell-carcass',  Lang:t('progressbar.selling')..name..'..', Config.SellTime, false, true, {
                     disableMovement = true,
                     disableCarMovement = false,
                     disableMouse = false,
@@ -93,14 +93,16 @@ AddEventHandler('rsg-butcher:client:sellanimal', function()
                         elseif quality == -1 then
                             TriggerServerEvent("rsg-butcher:server:reward", reward, 'perfect') -- perfect quality reward
                         else
-                            RSGCore.Functions.Notify('something went wrong!', 'error')
+                            RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
                         end
                     else
-                        RSGCore.Functions.Notify('something went wrong!', 'error')
+                        RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
                     end
                 end)
             end
         end
+    else
+        RSGCore.Functions.Notify(Lang:t('error.dont_have_animal'), 'error')
     end
 end)
 
@@ -122,7 +124,7 @@ end
 RegisterNetEvent('rsg-butcher:client:OpenButcherShop')
 AddEventHandler('rsg-butcher:client:OpenButcherShop', function()
     local ShopItems = {}
-    ShopItems.label = "Butcher Shop"
+    ShopItems.label = Lang:t('menu.butcher_shop')
     ShopItems.items = Config.ButcherShop
     ShopItems.slots = #Config.ButcherShop
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "ButcherShop_"..math.random(1, 99), ShopItems)
