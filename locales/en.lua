@@ -11,7 +11,7 @@ local Translations = {
     },
     menu = {
         open = 'Open ',
-        sell_your_animal_the_butcher = 'sell your animal to the butcher',
+        sell_your_animal_the_butcher = 'sell your animal',
         buy_items_from_butcher = 'buy items from the butcher',
         close_menu = 'Close Menu',
         open_shop = 'Open Shop',
