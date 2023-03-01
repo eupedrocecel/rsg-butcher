@@ -68,12 +68,14 @@ AddEventHandler('rsg-butcher:client:sellanimal', function()
         print("quality: "..tostring(quality))
     end    
     if holding ~= false then
-        for i, row in pairs(Config.Animal) do
-            if model == Config.Animal[i]["model"] then
-                local reward = Config.Animal[i]["reward"]
-                local name = Config.Animal[i]["name"]
+        for i = 1, #Config.Animal do
+            if model == Config.Animal[i].model then
+                local rewardmoney = Config.Animal[i].rewardmoney
+                local rewarditem = Config.Animal[i].rewarditem
+                local name = Config.Animal[i].name
                 if Config.Debug == true then
-                    print("reward: "..tostring(reward))
+                    print("reward money: "..tostring(rewardmoney))
+                    print("reward item: "..tostring(rewarditem))
                     print("name: "..tostring(name))
                 end
                 RSGCore.Functions.Progressbar('sell-carcass',  Lang:t('progressbar.selling')..name..'..', Config.SellTime, false, true, {
@@ -85,13 +87,13 @@ AddEventHandler('rsg-butcher:client:sellanimal', function()
                     local deleted = DeleteThis(holding)
                     if deleted then
                         if quality == 0 then
-                            TriggerServerEvent("rsg-butcher:server:reward", reward, 'poor') -- poor quality reward
+                            TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'poor') -- poor quality reward
                         elseif quality == 1 then
-                            TriggerServerEvent("rsg-butcher:server:reward", reward, 'good') -- good quality reward
+                            TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'good') -- good quality reward
                         elseif quality == 2 then
-                            TriggerServerEvent("rsg-butcher:server:reward", reward, 'perfect') -- perfect quality reward
+                            TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'perfect') -- perfect quality reward
                         elseif quality == -1 then
-                            TriggerServerEvent("rsg-butcher:server:reward", reward, 'perfect') -- perfect quality reward
+                            TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'perfect') -- perfect quality reward
                         else
                             RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
                         end

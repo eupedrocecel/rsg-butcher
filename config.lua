@@ -31,370 +31,442 @@ Config.ButcherLocations = {
 
 Config.ButcherShop = {
     -- butcher shop items
-    [1] = { name = "raw_meat", price = 3, amount = 500, info = {}, type = "item", slot = 1, },
+    [1] = { name = 'raw_meat', price = 3, amount = 500, info = {}, type = 'item', slot = 1, },
 }
 
 Config.Animal = {
 
-    [1] =  {
-        ["name"] = "Bear",
-        ["model"] = -1124266369,
-        ["reward"] = 14
+    {
+        name        = 'Bear',
+        model       = -1124266369,
+        rewardmoney = 14,
+        rewarditem  = 'raw_meat'
     },
-    [2] =  {
-        ["name"] = "Big Horn Ram",
-        ["model"] = -15687816381, 
-        ["reward"] = 3
+    {
+        name        = 'Big Horn Ram',
+        model       = -15687816381, 
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [3] =  {
-        ["name"] = "Boar",
-        ["model"] = 2028722809,
-        ["reward"] = 3
+    {
+        name        = 'Boar',
+        model       = 2028722809,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [4] =  {
-        ["name"] = "Buck",
-        ["model"] = -1963605336,
-        ["reward"] = 7
+    {
+        name        = 'Buck',
+        model       = -1963605336,
+        rewardmoney = 7,
+        rewarditem  = 'raw_meat'
     },
-    [5] =  {
-        ["name"] = "Bison",
-        ["model"] = 1556473961,
-        ["reward"] = 10
+    {
+        name        = 'Bison',
+        model       = 1556473961,
+        rewardmoney = 10,
+        rewarditem  = 'raw_meat'
     },
-    [6] =  {
-        ["name"] = "Bull",
-        ["model"] = 195700131,
-        ["reward"] = 8 
+    {
+        name        = 'Bull',
+        model       = 195700131,
+        rewardmoney = 8,
+        rewarditem  = 'raw_meat'
     },
-    [7] =  {
-        ["name"] = "Deer",
-        ["model"] = 1110710183,
-        ["reward"] = 3
+    {
+        name        = 'Deer',
+        model       = 1110710183,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [8] =  {
-        ["name"] = "Duck",
-        ["model"] = -1003616053,
-        ["reward"] = 1
+    {
+        name        = 'Duck',
+        model       = -1003616053,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [9] =  {
-        ["name"] = "Eagle",
-        ["model"] = 1459778951,
-        ["reward"] = 6
+    {
+        name        = 'Eagle',
+        model       = 1459778951,
+        rewardmoney = 6,
+        rewarditem  = 'raw_meat'
     },
-    [10] = {
-        ["name"] = "Egret",
-        ["model"] = 831859211,
-        ["reward"] = 3 
+    {
+        name        = 'Egret',
+        model       = 831859211,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [11] = {
-        ["name"] = "Elk",
-        ["model"] = -2021043433,
-        ["reward"] = 5
+    {
+        name        = 'Elk',
+        model       = -2021043433,
+        rewardmoney = 5,
+        rewarditem  = 'raw_meat'
     },
-    [12] = {
-        ["name"] = "American Red Fox",
-        ["model"] = 252669332,
-        ["reward"] = 5
+    {
+        name        = 'American Red Fox',
+        model       = 252669332,
+        rewardmoney = 5,
+        rewarditem  = 'raw_meat'
     },
-    [13] = {
-        ["name"] = "Big Grey Wolf",
-        ["model"] = -1143398950,
-        ["reward"] = 6 
+    {
+        name        = 'Big Grey Wolf',
+        model       = -1143398950,
+        rewardmoney = 6,
+        rewarditem  = 'raw_meat'
     },
-    [14] = {
-        ["name"] = "Medium Grey Wolf",
-        ["model"] = -885451903,
-        ["reward"] = 5 
+    {
+        name        = 'Medium Grey Wolf',
+        model       = -885451903,
+        rewardmoney = 5,
+        rewarditem  = 'raw_meat'
     },
-    [15] = {
-        ["name"] = "Small Grey Wolf",
-        ["model"] = -829273561,
-        ["reward"] = 4 
+    {
+        name        = 'Small Grey Wolf',
+        model       = -829273561,
+        rewardmoney = 4,
+        rewarditem  = 'raw_meat'
     },
-    [16] = {
-        ["name"] = "Vulture",
-        ["model"] = 1104697660,
-        ["reward"] = 1
+    {
+        name        = 'Vulture',
+        model       = 1104697660,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [17] = {
-        ["name"] = "Snapping Turtle",
-        ["model"] = -407730502,
-        ["reward"] = 3
+    {
+        name        = 'Snapping Turtle',
+        model       = -407730502,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [18] = {
-        ["name"] = "Wild Turkey",
-        ["model"] = -466054788,
-        ["reward"] = 1
+    {
+        name        = 'Wild Turkey',
+        model       = -466054788,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [19] = {
-        ["name"] = "Wild Turkey",
-        ["model"] = -2011226991,
-        ["reward"] = 1
+    {
+        name        = 'Wild Turkey',
+        model       = -2011226991,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [20] = {
-        ["name"] = "Wild Turkey",
-        ["model"] = -166054593,
-        ["reward"] = 1
+    {
+        name        = 'Wild Turkey',
+        model       = -166054593,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [21] = {
-        ["name"] = "Water Snake",
-        ["model"] = -229688157,
-        ["reward"] = 3
+    {
+        name        = 'Water Snake',
+        model       = -229688157,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [22] = {
-        ["name"] = "Water Snake",
-        ["model"] = -229688157,
-        ["reward"] = 3
+    {
+        name        = 'Water Snake',
+        model       = -229688157,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
     [23] = {
-        ["name"] = "Snake Red Boa",
-        ["model"] = -1790499186,
-        ["reward"] = 3
+        name        = 'Snake Red Boa',
+        model       = -1790499186,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [24] = {
-        ["name"] = "Snake Fer-De-Lance",
-        ["model"] = 1464167925,
-        ["reward"] = 3
+    {
+        name        = 'Snake Fer-De-Lance',
+        model       = 1464167925,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [25] = {
-        ["name"] = "Black-Tailed Rattlesnake",
-        ["model"] = 846659001, 
-        ["reward"] = 3
+    {
+        name        = 'Black-Tailed Rattlesnake',
+        model       = 846659001, 
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [26] = {
-        ["name"] = "Western Rattlesnake",
-        ["model"] = 545068538,
-        ["reward"] = 3
+    {
+        name        = 'Western Rattlesnake',
+        model       = 545068538,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [27] = {
-        ["name"] = "Striped Skunk",
-        ["model"] = -1211566332,
-        ["reward"] = 8
+    {
+        name        = 'Striped Skunk',
+        model       = -1211566332,
+        rewardmoney = 8,
+        rewarditem  = 'raw_meat'
     },
-    [28] = {
-        ["name"] = "Merino Sheep",
-        ["model"] = 40345436,
-        ["reward"] = 1
+    {
+        name        = 'Merino Sheep',
+        model       = 40345436,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [29] = {
-        ["name"] = "Herring Seagull",
-        ["model"] = -164963696,
-        ["reward"] = 1
+    {
+        name        = 'Herring Seagull',
+        model       = -164963696,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [30] = {
-        ["name"] = "Roseate Spoonbill",
-        ["model"] = -1076508705,
-        ["reward"] = 2
+    {
+        name        = 'Roseate Spoonbill',
+        model       = -1076508705,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [31] = {
-        ["name"] = "Dominique Rooster",
-        ["model"] = 2023522846,
-        ["reward"] = 1
+    {
+        name        = 'Dominique Rooster',
+        model       = 2023522846,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [32] = {
-        ["name"] = "Red-Footed Booby",
-        ["model"] = -466687768,
-        ["reward"] = 3
+    {
+        name        = 'Red-Footed Booby',
+        model       = -466687768,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [33] = {
-        ["name"] = "Wester Raven",
-        ["model"] = -575340245,
-        ["reward"] = 1
+    {
+        name        = 'Wester Raven',
+        model       = -575340245,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [34] = {
-        ["name"] = "North American Racoon",
-        ["model"] = 1458540991,
-        ["reward"] = 1
+    {
+        name        = 'North American Racoon',
+        model       = 1458540991,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [35] = {
-        ["name"] = "Black-Tailed Jackrabbit",
-        ["model"] = -541762431,
-        ["reward"] = 1
+    {
+        name        = 'Black-Tailed Jackrabbit',
+        model       = -541762431,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [36] = {
-        ["name"] = "American Pronghorn Doe",
-        ["model"] = 1755643085,
-        ["reward"] = 1
+    {
+        name        = 'American Pronghorn Doe',
+        model       = 1755643085,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [37] = {
-        ["name"] = "Greater Prairie Chicken",
-        ["model"] = 2079703102,
-        ["reward"] = 1
+    {
+        name        = 'Greater Prairie Chicken',
+        model       = 2079703102,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [38] = {
-        ["name"] = "Wirginia Possum",
-        ["model"] = -1414989025,
-        ["reward"] = 2
+    {
+        name        = 'Wirginia Possum',
+        model       = -1414989025,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [39] = {
-        ["name"] = "Berkshire Pig",
-        ["model"] = 1007418994,
-        ["reward"] = 1
+    {
+        name        = 'Berkshire Pig',
+        model       = 1007418994,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [40] = {
-        ["name"] = "Ring-Necked Pheasant",
-        ["model"] = 1416324601,
-        ["reward"] = 1
+    {
+        name        = 'Ring-Necked Pheasant',
+        model       = 1416324601,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [41] = {
-        ["name"] = "American White Pelican",
-        ["model"] = 1265966684,
-        ["reward"] = 1
+    {
+        name        = 'American White Pelican',
+        model       = 1265966684,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [42] = {
-        ["name"] = "Blue And Yellow Macaw",
-        ["model"] = -1797450568,
-        ["reward"] = 6
+    {
+        name        = 'Blue And Yellow Macaw',
+        model       = -1797450568,
+        rewardmoney = 6,
+        rewarditem  = 'raw_meat'
     },
-    [43] = {
-        ["name"] = "Panther",
-        ["model"] = 1654513481,
-        ["reward"] = 30
+    {
+        name        = 'Panther',
+        model       = 1654513481,
+        rewardmoney = 30,
+        rewarditem  = 'raw_meat'
     },
-    [44] = {
-        ["name"] = "Californian Condor",
-        ["model"] = 1205982615,
-        ["reward"] = 1
+    {
+        name        = 'Californian Condor',
+        model       = 1205982615,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [45] = {
-        ["name"] = "Dominique Chicken",
-        ["model"] = -2063183075,
-        ["reward"] = 1
+    {
+        name        = 'Dominique Chicken',
+        model       = -2063183075,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [46] = {
-        ["name"] = "Double-Crested Cormorant",
-        ["model"] = -2073130256,
-        ["reward"] = 1
+    {
+        name        = 'Double-Crested Cormorant',
+        model       = -2073130256,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [47] = {
-        ["name"] = "Cougar",
-        ["model"] = 90264823,
-        ["reward"] = 25
+    {
+        name        = 'Cougar',
+        model       = 90264823,
+        rewardmoney = 25,
+        rewarditem  = 'raw_meat'
     },
-    [48] = {
-        ["name"] = "Florida Cracker Cow",
-        ["model"] = -50684386,
-        ["reward"] = 1
+    {
+        name        = 'Florida Cracker Cow',
+        model       = -50684386,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [49] = {
-        ["name"] = "Coyote",
-        ["model"] = 480688259,
-        ["reward"] = 2
+    {
+        name        = 'Coyote',
+        model       = 480688259,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [50] = {
-        ["name"] = "Whooping Crane",
-        ["model"] = -564099192,
-        ["reward"] = 1
+    {
+        name        = 'Whooping Crane',
+        model       = -564099192,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },   
-    [51] = {
-        ["name"] = "Gila Monster",
-        ["model"] = 457416415,
-        ["reward"] = 3
+    {
+        name        = 'Gila Monster',
+        model       = 457416415,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [52] = {
-        ["name"] = "Alpine Goat",
-        ["model"] = -753902995,
-        ["reward"] = 2
+    {
+        name        = 'Alpine Goat',
+        model       = -753902995,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [53] = {
-        ["name"] = "Canada Goose",
-        ["model"] = 723190474,
-        ["reward"] = 1
+    {
+        name        = 'Canada Goose',
+        model       = 723190474,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [54] = {
-        ["name"] = "Ferruinous Hawk",
-        ["model"] = -2145890973,
-        ["reward"] = 3
+    {
+        name        = 'Ferruinous Hawk',
+        model       = -2145890973,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [55] = {
-        ["name"] = "Great Blue Heron",
-        ["model"] = 1095117488,
-        ["reward"] = 4
+    {
+        name        = 'Great Blue Heron',
+        model       = 1095117488,
+        rewardmoney = 4,
+        rewarditem  = 'raw_meat'
     },
-    [56] = {
-        ["name"] = "Green Iguana",
-        ["model"] = -1854059305,
-        ["reward"] = 2
+    {
+        name        = 'Green Iguana',
+        model       = -1854059305,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [57] = {
-        ["name"] = "Desert Iguana",
-        ["model"] = -593056309,
-        ["reward"] = 2
+    {
+        name        = 'Desert Iguana',
+        model       = -593056309,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [58] = {
-        ["name"] = "Peccary Pig",
-        ["model"] = 1751700893,
-        ["reward"] = 1
+    {
+        name        = 'Peccary Pig',
+        model       = 1751700893,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [59] = {
-        ["name"] = "Common Loon",
-        ["model"] = 386506078,
-        ["reward"] = 13
+    {
+        name        = 'Common Loon',
+        model       = 386506078,
+        rewardmoney = 13,
+        rewarditem  = 'raw_meat'
     },
-    [60] = {
-        ["name"] = "Moose",
-        ["model"] = -1098441944,
-        ["reward"] = 3
+    {
+        name        = 'Moose',
+        model       = -1098441944,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [61] = {
-        ["name"] = "American Muskrat",
-        ["model"] = -1134449699,
-        ["reward"] = 2
+    {
+        name        = 'American Muskrat',
+        model       = -1134449699,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [62] = {
-        ["name"] = "Great Horned Owl",
-        ["model"] = -861544272,
-        ["reward"] = 3
+    {
+        name        = 'Great Horned Owl',
+        model       = -861544272,
+        rewardmoney = 3,
+        rewarditem  = 'raw_meat'
     },
-    [63] = {
-        ["name"] = "Angus Ox",
-        ["model"] = 556355544,
-        ["reward"] = 1
+    {
+        name        = 'Angus Ox',
+        model       = 556355544,
+        rewardmoney = 1,
+        rewarditem  = 'raw_meat'
     },
-    [64] = {
-        ["name"] = "Alligator",
-        ["model"] = -1892280447,
-        ["reward"] = 4
+    {
+        name        = 'Alligator',
+        model       = -1892280447,
+        rewardmoney = 4,
+        rewarditem  = 'raw_meat'
     },
-    [65] = {
-        ["name"] = "North American Beaver",
-        ["model"] = 759906147,
-        ["reward"] = 2
+    {
+        name        = 'North American Beaver',
+        model       = 759906147,
+        rewardmoney = 2,
+        rewarditem  = 'raw_meat'
     },
-    [66] = {
-        ["name"] = "American Black Bear",
-        ["model"] = 730092646,
-        ["reward"] = 4
+    {
+        name        = 'American Black Bear',
+        model       = 730092646,
+        rewardmoney = 4,
+        rewarditem  = 'raw_meat'
     },
-    [67] = { -- a_c_alligator_03
-        ["name"] = "Alligator",
-        ["model"] = -1295720802,
-        ["reward"] = 4
+    {
+        name        = 'Alligator',
+        model       = -1295720802,
+        rewardmoney = 4,
+        rewarditem  = 'raw_meat'
     },
-    [68] = { -- mp_a_c_beaver_01
-        ["name"] = "Legendary Moon Beaver",
-        ["model"] = -1149999295,
-        ["reward"] = 100
+    {
+        name        = 'Legendary Moon Beaver',
+        model       = -1149999295,
+        rewardmoney = 100,
+        rewarditem  = 'raw_meat'
     },
-    [69] = { -- mp_a_c_cougar_01 
-        ["name"] = "Legendary Maza Cougar",
-        ["model"] = -1433814131,
-        ["reward"] = 100
+    {
+        name        = 'Legendary Maza Cougar',
+        model       = -1433814131,
+        rewardmoney = 100,
+        rewarditem  = 'raw_meat'
     },
-    [70] = { -- mp_a_c_coyote_01
-        ["name"] = "Legendary Midnight Paw Coyote",
-        ["model"] = -1307757043,
-        ["reward"] = 100
+    {
+        name        = 'Legendary Midnight Paw Coyote',
+        model       = -1307757043,
+        rewardmoney = 100,
+        rewarditem  = 'raw_meat'
     },
-    [71] = { -- mp_a_c_panther_01
-        ["name"] = "Legendary Ghost Panther",
-        ["model"] = -1189368951,
-        ["reward"] = 100
+    {
+        name        = 'Legendary Ghost Panther',
+        model       = -1189368951,
+        rewardmoney = 100,
+        rewarditem  = 'raw_meat'
     },
-    [72] = { -- mp_a_c_wolf_01
-        ["name"] = "Legendary Onyx Wolf",
-        ["model"] = -1392359921,
-        ["reward"] = 100
+    {
+        name        = 'Legendary Onyx Wolf',
+        model       = -1392359921,
+        rewardmoney = 100,
+        rewarditem  = 'raw_meat'
     },
     
 }
