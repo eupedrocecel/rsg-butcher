@@ -168,7 +168,7 @@ Config.Animal = {
         rewardmoney = 3,
         rewarditem  = 'raw_meat'
     },
-    [23] = {
+    {
         name        = 'Snake Red Boa',
         model       = -1790499186,
         rewardmoney = 3,
