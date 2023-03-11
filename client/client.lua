@@ -86,16 +86,20 @@ AddEventHandler('rsg-butcher:client:sellanimal', function()
                 }, {}, {}, {}, function() -- Done
                     local deleted = DeleteThis(holding)
                     if deleted then
+                        if quality == false then
+                            TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'poor') -- poor quality reward
+                        end
                         if quality == 0 then
                             TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'poor') -- poor quality reward
-                        elseif quality == 1 then
+                        end
+                        if quality == 1 then
                             TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'good') -- good quality reward
-                        elseif quality == 2 then
+                        end
+                        if quality == 2 then
                             TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'perfect') -- perfect quality reward
-                        elseif quality == -1 then
+                        end
+                        if quality == -1 then
                             TriggerServerEvent('rsg-butcher:server:reward', rewardmoney, rewarditem, 'perfect') -- perfect quality reward
-                        else
-                            RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
                         end
                     else
                         RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
