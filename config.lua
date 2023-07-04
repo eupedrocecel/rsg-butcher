@@ -44,7 +44,7 @@ Config.Animal = {
     },
     {
         name        = 'Big Horn Ram',
-        model       = -15687816381, 
+        model       = -1568716381, 
         rewardmoney = 3,
         rewarditem  = 'raw_meat'
     },
