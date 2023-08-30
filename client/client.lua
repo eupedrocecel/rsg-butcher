@@ -20,41 +20,31 @@ Citizen.CreateThread(function()
     end
 end)
 
--- butcher menu
 RegisterNetEvent('rsg-butcher:client:menu', function(butchername)
-    exports['rsg-menu']:openMenu({
+    lib.registerContext(
         {
-            header = butchername,
-            isMenuHeader = true,
-        },
-        {
-            header = Lang:t('menu.sell_animal'),
-            txt = Lang:t('menu.sell_your_animal_the_butcher'),
-            icon = "fas fa-paw",
-            params = {
-                event = 'rsg-butcher:client:sellanimal',
-                isServer = false,
-                args = {}
+            id = 'butcher_menu',
+            title = butchername,
+            position = 'top-right',
+            options = {
+                {
+                    title = Lang:t('menu.sell_animal'),
+                    description = Lang:t('menu.sell_your_animal_the_butcher'),
+                    icon = 'fas fa-shopping-basket',
+                    --iconColor = 'red',
+                    event = 'rsg-butcher:client:sellanimal',
+                },
+                {
+                    title = Lang:t('menu.open_shop'),
+                    description = Lang:t('menu.buy_items_from_butcher'),
+                    icon = 'fas fa-shopping-basket',
+                    --iconColor = 'red',
+                    event = 'rsg-butcher:client:OpenButcherShop',
+                },
             }
-        },
-        {
-            header = Lang:t('menu.open_shop'),
-            txt = Lang:t('menu.buy_items_from_butcher'),
-            icon = "fas fa-shopping-basket",
-            params = {
-                event = 'rsg-butcher:client:OpenButcherShop',
-                isServer = false,
-                args = {}
-            }
-        },
-        {
-            header =  Lang:t('menu.close_menu'),
-            txt = '',
-            params = {
-                event = 'rsg-menu:closeMenu',
-            }
-        },
-    })
+        }
+    )
+    lib.showContext('butcher_menu')
 end)
 
 RegisterNetEvent('rsg-butcher:client:sellanimal')

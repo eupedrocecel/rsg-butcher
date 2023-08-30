@@ -6,6 +6,7 @@ author 'RexShack#3041'
 description 'rsg-butcher'
 
 shared_scripts {
+    '@ox_lib/init.lua',
     '@rsg-core/shared/locale.lua',
     'config.lua',
     'locales/en.lua',
@@ -20,7 +21,9 @@ server_scripts {
     'server/server.lua'
 }
 
-dependency 'rsg-core'
-dependency 'rsg-menu'
+dependencies {
+    'rsg-core',
+    'ox_lib',
+}
 
 lua54 'yes'
