@@ -30,7 +30,7 @@ RegisterNetEvent('rsg-butcher:client:menu', function(butchername)
                 {
                     title = Lang:t('menu.sell_animal'),
                     description = Lang:t('menu.sell_your_animal_the_butcher'),
-                    icon = 'fas fa-shopping-basket',
+                    icon = 'fas fa-paw',
                     --iconColor = 'red',
                     event = 'rsg-butcher:client:sellanimal',
                 },
